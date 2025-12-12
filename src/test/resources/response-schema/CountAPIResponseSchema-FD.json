@@ -10,7 +10,10 @@
                     "type": "string"
                 },
                 "data": {
-                    "$ref": "#/definitions/Data"
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Datum"
+                    }
                 }
             },
             "required": [
@@ -19,18 +22,26 @@
             ],
             "title": "Welcome6"
         },
-        "Data": {
+        "Datum": {
             "type": "object",
             "additionalProperties": false,
             "properties": {
-                "token": {
+                "label": {
                     "type": "string"
+                },
+                "key": {
+                    "type": "string"
+                },
+                "count": {
+                    "type": "integer"
                 }
             },
             "required": [
-                "token"
+                "count",
+                "key",
+                "label"
             ],
-            "title": "Data"
+            "title": "Datum"
         }
     }
 }

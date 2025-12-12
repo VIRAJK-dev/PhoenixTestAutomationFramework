@@ -2,7 +2,7 @@ package com.api.tests;
 
 import static io.restassured.RestAssured.given;
 import static io.restassured.http.ContentType.JSON;
-import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.*;
 import static org.hamcrest.Matchers.lessThan;
 
 import java.io.IOException;

@@ -16,6 +16,7 @@ public class ConfigManager {
 
 	private ConfigManager() {
 		// Private constructor
+		
 	}
 
 	static {
