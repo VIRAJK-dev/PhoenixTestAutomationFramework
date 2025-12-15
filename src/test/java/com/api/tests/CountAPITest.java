@@ -22,7 +22,7 @@ public class CountAPITest {
 				.time(lessThan(1000L)).body("data", notNullValue()).body("data.size()", equalTo(3))
 				.body("data.count", everyItem(greaterThanOrEqualTo(0)))
 				.body("data.label", everyItem(not(blankOrNullString())))
-				.body("data.key", containsInAnyOrder("pending_for_delivery,created_today,pending_fst_assignment"))
+				.body("data.key", containsInAnyOrder("pending_for_delivery","created_today","pending_fst_assignment"))
 				.body(matchesJsonSchemaInClasspath("response-schema/CountAPIResponseSchema-FD.json"));
 
 	}

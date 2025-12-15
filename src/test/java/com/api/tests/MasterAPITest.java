@@ -14,7 +14,7 @@ import static io.restassured.module.jsv.JsonSchemaValidator.*;
 
 import static io.restassured.RestAssured.*;
 
-public class MaterAPITest {
+public class MasterAPITest {
 
 	
 
